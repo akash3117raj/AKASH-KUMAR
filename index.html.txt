@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akash Raj | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:#fff;
+overflow-x:hidden;
+}
+
+.bg{
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,255,255,.15),transparent 30%),
+radial-gradient(circle at 80% 80%,rgba(123,44,255,.18),transparent 30%);
+z-index:-1;
+animation:moveBg 10s infinite alternate;
+}
+
+@keyframes moveBg{
+from{transform:translateY(0);}
+to{transform:translateY(-50px);}
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+padding:18px 8%;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.logo span{
+color:#00e5ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:850px;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:800;
+}
+
+.hero span{
+background:linear-gradient(90deg,#00e5ff,#8b5cf6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+#typing{
+color:#00e5ff;
+font-size:1.5rem;
+margin:20px 0;
+font-weight:600;
+}
+
+.hero p{
+opacity:.85;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#00e5ff;
+color:#000;
+text-decoration:none;
+font-weight:600;
+border-radius:40px;
+transition:.3s;
+margin:10px;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.secondary{
+background:transparent;
+border:2px solid #00e5ff;
+color:white;
+}
+
+.socials{
+margin-top:25px;
+}
+
+.socials a{
+font-size:28px;
+margin:0 15px;
+color:white;
+transition:.3s;
+}
+
+.socials a:hover{
+color:#00e5ff;
+transform:translateY(-5px);
+}
+
+section{
+padding:100px 10%;
+}
+
+.title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+}
+
+.glass{
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+padding:30px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill{
+text-align:center;
+padding:20px;
+border-radius:15px;
+background:rgba(255,255,255,.05);
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-10px);
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+padding:25px;
+border-radius:20px;
+background:rgba(255,255,255,.05);
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+}
+
+.contact p{
+margin:12px 0;
+font-size:18px;
+}
+
+.contact a{
+color:#00e5ff;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:30px;
+opacity:.7;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.7rem;
+}
+
+nav ul{
+display:none;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<header>
+<nav>
+<div class="logo">Akash<span>.</span></div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Hi, I'm <span>Akash Raj</span></h1>
+
+<div id="typing"></div>
+
+<p>
+MCA Student at Galgotias University passionate about Java Development,
+Machine Learning, Web Technologies and Problem Solving.
+Building innovative applications and continuously learning modern technologies.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+<a href="resume.pdf" class="btn secondary">Download Resume</a>
+
+<div class="socials">
+
+<a href="https://github.com/akash3117raj" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/akash-raj-42a4693a3" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://instagram.com/starakash44" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="glass">
+<p>
+Hello! I'm Akash Raj, currently pursuing MCA from Galgotias University.
+I enjoy creating software solutions, exploring Machine Learning,
+working with Java and building projects that solve real-world problems.
+My goal is to become a highly skilled Software Engineer and AI Developer.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Java</div>
+<div class="skill">Python</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">MySQL</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">DSA</div>
+<div class="skill">OOP</div>
+<div class="skill">Problem Solving</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>EchoMood</h3>
+<p>
+AI-powered Speech Emotion Recognition platform using Machine Learning.
+</p>
+</div>
+
+<div class="project">
+<h3>Speech Emotion Recognition</h3>
+<p>
+Emotion detection from audio recordings using feature extraction and ML.
+</p>
+</div>
+
+<div class="project">
+<h3>Java Applications</h3>
+<p>
+Collection of Java projects demonstrating DSA and OOP concepts.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="glass contact">
+
+<p>📧 Email: <a href="mailto:akashraj3117@gmail.com">akashraj3117@gmail.com</a></p>
+
+<p>📱 Mobile: <a href="tel:+918340126568">+91 8340126568</a></p>
+
+<p>💻 GitHub: <a href="https://github.com/akash3117raj" target="_blank">github.com/akash3117raj</a></p>
+
+<p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/akash-raj-42a4693a3" target="_blank">View Profile</a></p>
+
+<p>📷 Instagram: <a href="https://instagram.com/starakash44" target="_blank">@starakash44</a></p>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Akash Raj | Building the Future with Code and AI.</p>
+</footer>
+
+<script>
+
+const text=[
+"Java Developer",
+"Machine Learning Enthusiast",
+"Web Developer",
+"MCA Student"
+];
+
+let count=0;
+let index=0;
+let currentText='';
+let letter='';
+
+(function type(){
+
+if(count===text.length){
+count=0;
+}
+
+currentText=text[count];
+letter=currentText.slice(0,++index);
+
+document.getElementById('typing').textContent=letter;
+
+if(letter.length===currentText.length){
+
+count++;
+index=0;
+
+setTimeout(type,1200);
+
+}else{
+setTimeout(type,100);
+}
+
+})();
+
+</script>
+
+</body>
+</html>
